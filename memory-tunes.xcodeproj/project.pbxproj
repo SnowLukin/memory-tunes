@@ -7,23 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0286185F9C80F24B2A67C6ED /* Pods_memory_tunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BD78A2F7E3D007DF698877 /* Pods_memory_tunes.framework */; };
 		D703895C2A1FD79D00398B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703895B2A1FD79D00398B18 /* AppDelegate.swift */; };
 		D703895E2A1FD79D00398B18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703895D2A1FD79D00398B18 /* SceneDelegate.swift */; };
-		D70389602A1FD79D00398B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703895F2A1FD79D00398B18 /* ViewController.swift */; };
-		D70389632A1FD79D00398B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D70389612A1FD79D00398B18 /* Main.storyboard */; };
 		D70389652A1FD7A100398B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D70389642A1FD7A100398B18 /* Assets.xcassets */; };
 		D70389682A1FD7A100398B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D70389662A1FD7A100398B18 /* LaunchScreen.storyboard */; };
+		D70389712A1FD9FF00398B18 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389702A1FD9FF00398B18 /* AppState.swift */; };
+		D70389742A1FDA7D00398B18 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389732A1FDA7D00398B18 /* AppReducer.swift */; };
+		D70389792A1FDC3B00398B18 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389782A1FDC3B00398B18 /* AppRouter.swift */; };
+		D703897B2A1FDC8600398B18 /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703897A2A1FDC8600398B18 /* RoutingState.swift */; };
+		D703897D2A1FE4A800398B18 /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703897C2A1FE4A800398B18 /* RoutingReducer.swift */; };
+		D70389802A1FE76D00398B18 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703897F2A1FE76D00398B18 /* MenuViewController.swift */; };
+		D70389822A1FE77600398B18 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389812A1FE77600398B18 /* CategoriesTableViewController.swift */; };
+		D70389842A1FE78000398B18 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389832A1FE78000398B18 /* GameViewController.swift */; };
+		D70389872A205B0000398B18 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389862A205B0000398B18 /* CardCollectionViewCell.swift */; };
+		D70389892A20614A00398B18 /* MenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389882A20614A00398B18 /* MenuState.swift */; };
+		D703898B2A20617F00398B18 /* MenuReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703898A2A20617F00398B18 /* MenuReducer.swift */; };
+		D703898E2A20625000398B18 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703898D2A20625000398B18 /* TableDataSource.swift */; };
+		D70389912A20650200398B18 /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389902A20650200398B18 /* RoutingAction.swift */; };
+		D70389932A20683C00398B18 /* CategoriesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389922A20683C00398B18 /* CategoriesState.swift */; };
+		D70389952A20686B00398B18 /* ChangeCategoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389942A20686B00398B18 /* ChangeCategoryAction.swift */; };
+		D70389972A2068AC00398B18 /* CategoriesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389962A2068AC00398B18 /* CategoriesReducer.swift */; };
+		D703899B2A206DEC00398B18 /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703899A2A206DEC00398B18 /* iTunesAPI.swift */; };
+		D703899D2A206EF200398B18 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703899C2A206EF200398B18 /* GameState.swift */; };
+		D703899F2A206F9E00398B18 /* GameReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703899E2A206F9E00398B18 /* GameReducer.swift */; };
+		D70389A12A20700000398B18 /* SetCardsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389A02A20700000398B18 /* SetCardsAction.swift */; };
+		D70389A32A20703900398B18 /* FetchTunesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389A22A20703900398B18 /* FetchTunesAction.swift */; };
+		D70389A52A2071CE00398B18 /* MemoryGameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389A42A2071CE00398B18 /* MemoryGameLogic.swift */; };
+		D70389A72A20AA5F00398B18 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389A62A20AA5F00398B18 /* CollectionDataSource.swift */; };
+		D70389A92A20ACF900398B18 /* FlipCardAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70389A82A20ACF900398B18 /* FlipCardAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05BD78A2F7E3D007DF698877 /* Pods_memory_tunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memory_tunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3D3C6FD5683912D2E2C1DE /* Pods-memory-tunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memory-tunes.release.xcconfig"; path = "Target Support Files/Pods-memory-tunes/Pods-memory-tunes.release.xcconfig"; sourceTree = "<group>"; };
+		CE86B2D2097EC8B6679CF793 /* Pods-memory-tunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memory-tunes.debug.xcconfig"; path = "Target Support Files/Pods-memory-tunes/Pods-memory-tunes.debug.xcconfig"; sourceTree = "<group>"; };
 		D70389582A1FD79D00398B18 /* memory-tunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "memory-tunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D703895B2A1FD79D00398B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D703895D2A1FD79D00398B18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D703895F2A1FD79D00398B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D70389622A1FD79D00398B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D70389642A1FD7A100398B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D70389672A1FD7A100398B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D70389692A1FD7A100398B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70389702A1FD9FF00398B18 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D70389732A1FDA7D00398B18 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		D70389782A1FDC3B00398B18 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		D703897A2A1FDC8600398B18 /* RoutingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
+		D703897C2A1FE4A800398B18 /* RoutingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingReducer.swift; sourceTree = "<group>"; };
+		D703897F2A1FE76D00398B18 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D70389812A1FE77600398B18 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		D70389832A1FE78000398B18 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D70389862A205B0000398B18 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		D70389882A20614A00398B18 /* MenuState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuState.swift; sourceTree = "<group>"; };
+		D703898A2A20617F00398B18 /* MenuReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuReducer.swift; sourceTree = "<group>"; };
+		D703898D2A20625000398B18 /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		D70389902A20650200398B18 /* RoutingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
+		D70389922A20683C00398B18 /* CategoriesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesState.swift; sourceTree = "<group>"; };
+		D70389942A20686B00398B18 /* ChangeCategoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCategoryAction.swift; sourceTree = "<group>"; };
+		D70389962A2068AC00398B18 /* CategoriesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesReducer.swift; sourceTree = "<group>"; };
+		D703899A2A206DEC00398B18 /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		D703899C2A206EF200398B18 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		D703899E2A206F9E00398B18 /* GameReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameReducer.swift; sourceTree = "<group>"; };
+		D70389A02A20700000398B18 /* SetCardsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardsAction.swift; sourceTree = "<group>"; };
+		D70389A22A20703900398B18 /* FetchTunesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTunesAction.swift; sourceTree = "<group>"; };
+		D70389A42A2071CE00398B18 /* MemoryGameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameLogic.swift; sourceTree = "<group>"; };
+		D70389A62A20AA5F00398B18 /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		D70389A82A20ACF900398B18 /* FlipCardAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +79,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0286185F9C80F24B2A67C6ED /* Pods_memory_tunes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0586143BDFB02121DEB2440E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE86B2D2097EC8B6679CF793 /* Pods-memory-tunes.debug.xcconfig */,
+				CD3D3C6FD5683912D2E2C1DE /* Pods-memory-tunes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D703894F2A1FD79D00398B18 = {
 			isa = PBXGroup;
 			children = (
 				D703895A2A1FD79D00398B18 /* memory-tunes */,
 				D70389592A1FD79D00398B18 /* Products */,
+				0586143BDFB02121DEB2440E /* Pods */,
+				DB4453AA3ED2F9150DEB6092 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +116,101 @@
 		D703895A2A1FD79D00398B18 /* memory-tunes */ = {
 			isa = PBXGroup;
 			children = (
+				D70389782A1FDC3B00398B18 /* AppRouter.swift */,
+				D703898C2A20623E00398B18 /* DataSources */,
+				D70389982A206DD200398B18 /* Networking */,
+				D70389992A206DD700398B18 /* Views */,
+				D703898F2A2064F200398B18 /* Actions */,
+				D703897E2A1FE75A00398B18 /* ViewControllers */,
+				D70389722A1FDA6F00398B18 /* Reducer */,
+				D703896F2A1FD9F500398B18 /* State */,
 				D703895B2A1FD79D00398B18 /* AppDelegate.swift */,
 				D703895D2A1FD79D00398B18 /* SceneDelegate.swift */,
-				D703895F2A1FD79D00398B18 /* ViewController.swift */,
-				D70389612A1FD79D00398B18 /* Main.storyboard */,
 				D70389642A1FD7A100398B18 /* Assets.xcassets */,
 				D70389662A1FD7A100398B18 /* LaunchScreen.storyboard */,
 				D70389692A1FD7A100398B18 /* Info.plist */,
 			);
 			path = "memory-tunes";
+			sourceTree = "<group>";
+		};
+		D703896F2A1FD9F500398B18 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				D70389702A1FD9FF00398B18 /* AppState.swift */,
+				D703897A2A1FDC8600398B18 /* RoutingState.swift */,
+				D70389882A20614A00398B18 /* MenuState.swift */,
+				D70389922A20683C00398B18 /* CategoriesState.swift */,
+				D703899C2A206EF200398B18 /* GameState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		D70389722A1FDA6F00398B18 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				D70389732A1FDA7D00398B18 /* AppReducer.swift */,
+				D703897C2A1FE4A800398B18 /* RoutingReducer.swift */,
+				D703898A2A20617F00398B18 /* MenuReducer.swift */,
+				D70389962A2068AC00398B18 /* CategoriesReducer.swift */,
+				D703899E2A206F9E00398B18 /* GameReducer.swift */,
+				D70389A42A2071CE00398B18 /* MemoryGameLogic.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		D703897E2A1FE75A00398B18 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D703897F2A1FE76D00398B18 /* MenuViewController.swift */,
+				D70389832A1FE78000398B18 /* GameViewController.swift */,
+				D70389812A1FE77600398B18 /* CategoriesTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D703898C2A20623E00398B18 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				D703898D2A20625000398B18 /* TableDataSource.swift */,
+				D70389A62A20AA5F00398B18 /* CollectionDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		D703898F2A2064F200398B18 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				D70389902A20650200398B18 /* RoutingAction.swift */,
+				D70389942A20686B00398B18 /* ChangeCategoryAction.swift */,
+				D70389A02A20700000398B18 /* SetCardsAction.swift */,
+				D70389A22A20703900398B18 /* FetchTunesAction.swift */,
+				D70389A82A20ACF900398B18 /* FlipCardAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		D70389982A206DD200398B18 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D703899A2A206DEC00398B18 /* iTunesAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D70389992A206DD700398B18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D70389862A205B0000398B18 /* CardCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB4453AA3ED2F9150DEB6092 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05BD78A2F7E3D007DF698877 /* Pods_memory_tunes.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D703896C2A1FD7A100398B18 /* Build configuration list for PBXNativeTarget "memory-tunes" */;
 			buildPhases = (
+				72F1D8F725441C1C64D4C9F0 /* [CP] Check Pods Manifest.lock */,
 				D70389542A1FD79D00398B18 /* Sources */,
 				D70389552A1FD79D00398B18 /* Frameworks */,
 				D70389562A1FD79D00398B18 /* Resources */,
+				E843EB8F43DA72434EB8A6B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +275,90 @@
 			files = (
 				D70389682A1FD7A100398B18 /* LaunchScreen.storyboard in Resources */,
 				D70389652A1FD7A100398B18 /* Assets.xcassets in Resources */,
-				D70389632A1FD79D00398B18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72F1D8F725441C1C64D4C9F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-memory-tunes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E843EB8F43DA72434EB8A6B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memory-tunes/Pods-memory-tunes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-memory-tunes/Pods-memory-tunes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memory-tunes/Pods-memory-tunes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D70389542A1FD79D00398B18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D70389602A1FD79D00398B18 /* ViewController.swift in Sources */,
+				D70389892A20614A00398B18 /* MenuState.swift in Sources */,
+				D70389A52A2071CE00398B18 /* MemoryGameLogic.swift in Sources */,
+				D703897D2A1FE4A800398B18 /* RoutingReducer.swift in Sources */,
 				D703895C2A1FD79D00398B18 /* AppDelegate.swift in Sources */,
 				D703895E2A1FD79D00398B18 /* SceneDelegate.swift in Sources */,
+				D70389A32A20703900398B18 /* FetchTunesAction.swift in Sources */,
+				D70389972A2068AC00398B18 /* CategoriesReducer.swift in Sources */,
+				D70389792A1FDC3B00398B18 /* AppRouter.swift in Sources */,
+				D703899B2A206DEC00398B18 /* iTunesAPI.swift in Sources */,
+				D70389912A20650200398B18 /* RoutingAction.swift in Sources */,
+				D70389802A1FE76D00398B18 /* MenuViewController.swift in Sources */,
+				D70389952A20686B00398B18 /* ChangeCategoryAction.swift in Sources */,
+				D70389932A20683C00398B18 /* CategoriesState.swift in Sources */,
+				D70389712A1FD9FF00398B18 /* AppState.swift in Sources */,
+				D70389A92A20ACF900398B18 /* FlipCardAction.swift in Sources */,
+				D703898E2A20625000398B18 /* TableDataSource.swift in Sources */,
+				D703897B2A1FDC8600398B18 /* RoutingState.swift in Sources */,
+				D70389742A1FDA7D00398B18 /* AppReducer.swift in Sources */,
+				D70389842A1FE78000398B18 /* GameViewController.swift in Sources */,
+				D703898B2A20617F00398B18 /* MenuReducer.swift in Sources */,
+				D703899D2A206EF200398B18 /* GameState.swift in Sources */,
+				D70389A12A20700000398B18 /* SetCardsAction.swift in Sources */,
+				D703899F2A206F9E00398B18 /* GameReducer.swift in Sources */,
+				D70389822A1FE77600398B18 /* CategoriesTableViewController.swift in Sources */,
+				D70389872A205B0000398B18 /* CardCollectionViewCell.swift in Sources */,
+				D70389A72A20AA5F00398B18 /* CollectionDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D70389612A1FD79D00398B18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D70389622A1FD79D00398B18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D70389662A1FD7A100398B18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +486,7 @@
 		};
 		D703896D2A1FD7A100398B18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE86B2D2097EC8B6679CF793 /* Pods-memory-tunes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +497,7 @@
 				INFOPLIST_FILE = "memory-tunes/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +515,7 @@
 		};
 		D703896E2A1FD7A100398B18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3D3C6FD5683912D2E2C1DE /* Pods-memory-tunes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +526,7 @@
 				INFOPLIST_FILE = "memory-tunes/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
